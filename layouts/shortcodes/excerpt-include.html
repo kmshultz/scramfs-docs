@@ -1,0 +1,9 @@
+{{ $excerpt := findRE "(?ms){{%\\s*excerpt[^%]*%}}(.|\n)*?{{%\\s*/excerpt\\s*%}}" ( readFile (printf "./content/%s" (.Get "filename")) ) }}
+{{ range $excerpt }}
+	{{ if and ($.Get "search") ($.Get "replace") }}
+		{{ (replaceRE "(?ms){{%\\s*excerpt[^%]*%}}(.*){{%\\s*/excerpt\\s*%}}" "$1" .) | replaceRE ($.Get "search") ($.Get "replace") | safeHTML | markdownify }}
+	{{ else }}
+		{{ (replaceRE "(?ms){{%\\s*excerpt[^%]*%}}(.*){{%\\s*/excerpt\\s*%}}" "$1" .) | safeHTML | markdownify }}
+	{{ end }}
+{{ end }}
+{{.Inner}}
