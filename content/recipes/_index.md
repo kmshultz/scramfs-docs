@@ -1,7 +1,7 @@
 ---
-title: "Recipes"
+title: "Quick Recipes"
 date: 2018-04-18T13:38:48-07:00
-weight: -20
+weight: -80
 ---
 
-This is the Recipes section.
+This section shows the basic steps for each data source/backend combination, with links to more detailed information.

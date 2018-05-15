@@ -1,16 +1,14 @@
 ---
-title: "Step1_s3"
+title: "Creating An Alias To Dropbox"
+linkTitle: "Dropbox"
 date: 2018-05-07T11:37:10-07:00
-draft: true
+draft: false
 ---
 
-{{%excerpt%}}
-### Step 1: Create an Encrypted Folder in Dropbox
-
-First, create a new ScramFS alias called `<ALIAS>` that points to a new Dropbox folder, `secure.scramfs`:
+Create a new ScramFS alias called `dropbox` that points to a new Dropbox folder, `secure.scramfs`:
 
 ```
-$ scramfs alias create <ALIAS> -e --store-local-key --create -p secure.scramfs -t dropbox
+$ scramfs alias create dropbox -e --store-local-key --create -p secure.scramfs -t dropbox
 Use "my files" or "shared"? [M/s]: M
 Access token [press Enter to obtain the new one]: 
 ```
@@ -24,12 +22,12 @@ Next, press enter **Enter**, causing ScramFS to open Dropbox in your web browser
 Then return to your shell and set a password for your new encrypted folder (enter it twice to confirm):
 
 ```
-$ scramfs alias create <ALIAS> -e --store-local-key --create -p secure.scramfs -t dropbox
+$ scramfs alias create dropbox -e --store-local-key --create -p secure.scramfs -t dropbox
 Use "my files" or "shared"? [M/s]: M
 Authentication token [press Enter to obtain the new one]: 
-Set new encryption password for alias <ALIAS>: 
+Set new encryption password for alias dropbox: 
 Confirm encryption password: 
-Alias successfully created. You can access the alias using "scramfs://<AlIAS>". We recommend that you do "scramfs alias test <ALIAS>"
+Alias successfully created. You can access the alias using "scramfs://dropbox". We recommend that you do "scramfs alias test dropbox"
 ```
 
 Now you should be able to [see your new encrypted folder](https://www.dropbox.com/home/secure.scramfs):
@@ -39,10 +37,9 @@ Now you should be able to [see your new encrypted folder](https://www.dropbox.co
 Finally, to make sure ScramFS can write data to the folder, run the `alias test` command:
 
 ```
-$ scramfs alias test <ALIAS>
+$ scramfs alias test dropbox
 dropbox (read): PASS
 dropbox (write): PASS
 ```
 
 Looks good! Now you're ready to encrypt and backup local data to your Dropbox account.
-{{% /excerpt%}}

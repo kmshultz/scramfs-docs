@@ -1,6 +1,5 @@
 ---
-linkTitle: "MySQL"
-title: "MySQL Recipes"
+title: "MySQL"
 date: 2018-05-07T11:34:49-07:00
 draft: false
 ---

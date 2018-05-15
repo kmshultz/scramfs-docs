@@ -2,7 +2,7 @@
 title: "Getting Started"
 date: 2018-04-18T13:10:38-07:00
 draft: false
-weight: -30
+weight: -90
 ---
 
 Before we consider the many use cases for ScramFS CLI, let's get acquainted with it. This page shows how to:
