@@ -3,9 +3,10 @@ title: "Creating an Alias to a WebDAV Share"
 linkTitle: "WebDAV"
 date: 2018-05-10T15:26:41-07:00
 draft: False
+weight: -40
 ---
 
-Create a new ScramFS alias called `webdav_share` that points to a new folder, `secure.scramfs` (the folder need not exist yet):
+Create a new ScramFS alias called `webdav_share` that points to a new folder on the share, `secure.scramfs` (the folder need not exist yet):
 
 ```
 $ scramfs alias create my_webdav_share -e --store-local-key --create -p secure.scramfs -t webdav

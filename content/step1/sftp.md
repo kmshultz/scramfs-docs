@@ -2,7 +2,8 @@
 title: "Creating An Alias To An SFTP Server"
 linkTitle: "SFTP"
 date: 2018-05-10T15:26:45-07:00
-draft: true
+draft: false
+weight: -50
 ---
 
 Create a new ScramFS alias called `my_sftp_server` that points to a new folder on the server, `secure.scramfs` (the folder need not exist yet):

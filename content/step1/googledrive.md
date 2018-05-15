@@ -3,6 +3,7 @@ title: "Creating An Alias To Google Drive"
 linkTitle: "Google Drive"
 date: 2018-05-07T11:27:57-07:00
 draft: false
+weight: -30
 ---
 
 Create a new ScramFS alias called `google_drive` that points to a new Google Drive folder, `secure.scramfs`:

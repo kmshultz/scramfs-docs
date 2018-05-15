@@ -3,6 +3,7 @@ title: "Creating An Alias To Microsoft OneDrive"
 linkTitle: "Microsoft OneDrive"
 date: 2018-05-10T15:26:50-07:00
 draft: false
+weight: -20
 ---
 
 Create a new ScramFS alias called `my_onedrive` that points to a new OneDrive folder, `secure.scramfs`:

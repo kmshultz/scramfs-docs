@@ -3,6 +3,7 @@ title: "Creating An Alias To Dropbox"
 linkTitle: "Dropbox"
 date: 2018-05-07T11:37:10-07:00
 draft: false
+weight: -10
 ---
 
 Create a new ScramFS alias called `dropbox` that points to a new Dropbox folder, `secure.scramfs`:

@@ -160,7 +160,7 @@ In Step 1, you were warned never to lose the password for `secure_directory`. Si
 Suppose you have a network disk mounted at `/mnt/backup`. You can run the following to backup the encryption key for `secure_directory`:
 
 ```
-$ scramfs key backup secure_directory backup/
+$ scramfs key backup secure_directory /mnt/backup/
 Input password: 
 Input backup password: 
 Confirm backup password: 
